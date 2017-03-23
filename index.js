@@ -1,8 +1,7 @@
 module.exports = (server, redirectDomain = 'http://localhost') => {
-  return function(expose, update) => {
-    expose('httpRouter', 'get', 'post', 'update', 'delete', 'patch', 'options', 'header');
+  return (update, environments) => {
     server.on('request', (request, response) => {
-      update('httpRouter', request.method, request, response);
+      update(environments, request.method, request.url, request, response);
     });
 
     return {
