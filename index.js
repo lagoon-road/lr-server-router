@@ -1,7 +1,11 @@
 module.exports = (server, redirectDomain = 'http://localhost') => {
-  return (update, environments) => {
+  return (update, options) => {
     server.on('request', (request, response) => {
-      update(environments, request.method, request.url, request, response);
+      update(
+        Object.assign({}, options, { path : request.url, method : request.method }),
+        request,
+        response
+      );
     });
 
     return {
