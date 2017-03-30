@@ -1,6 +1,6 @@
 {
-  "name": "lr-router-http",
-  "version": "0.0.1",
+  "name": "lr-server-router",
+  "version": "1.0.0",
   "description": "Server side http router core extension for lagoon-road",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/braadworst/lr-router-http.git"
+    "url": "git+https://github.com/lagoon-road/lr-server-router.git"
   },
   "keywords": [
     "extension",
@@ -20,7 +20,7 @@
   "author": "Roy Niels",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/braadworst/lr-router-http/issues"
+    "url": "https://github.com/lagoon-road/lr-server-router/issues"
   },
-  "homepage": "https://github.com/braadworst/lr-router-http#readme"
+  "homepage": "https://github.com/lagoon-road/lr-server-router#readme"
 }

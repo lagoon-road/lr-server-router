@@ -3,7 +3,7 @@ module.exports = (server, redirectDomain = 'http://localhost') => {
     server.on('request', (request, response) => {
       const pathValue  = request.url;
       const updateType = request.method;
-      update({ ...options, pathValue, updateType }, request, response);
+      update(Object.assign({}, options, { pathValue, updateType }), request, response);
     });
 
     return {
