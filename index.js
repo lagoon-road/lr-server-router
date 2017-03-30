@@ -1,11 +1,9 @@
 module.exports = (server, redirectDomain = 'http://localhost') => {
   return (update, options) => {
     server.on('request', (request, response) => {
-      update(
-        Object.assign({}, options, { path : request.url, method : request.method }),
-        request,
-        response
-      );
+      const pathValue  = request.url;
+      const updateType = request.method;
+      update({ ...options, pathValue, updateType }, request, response);
     });
 
     return {
