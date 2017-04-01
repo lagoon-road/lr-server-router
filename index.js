@@ -1,9 +1,9 @@
 module.exports = (server, redirectDomain = 'http://localhost') => {
   return update => {
     server.on('request', (request, response) => {
-      const pathValue  = request.url;
+      const matchValue = request.url;
       const updateType = request.method;
-      update({ pathValue, updateType }, request, response);
+      update({ matchValue, updateType }, request, response);
     });
 
     return {
