@@ -14,4 +14,15 @@ A Lagoon road extension that gives you route functionality on the server.
 
 ---
 
-This package doesn't have any exposed methods
+### Function initialization
+This package doesn't have any exposed methods, it does however needs a single argument on creation.
+```
+const protocol = require('http');
+const server   = protocol.createServer();
+const router   = require('lg-server-router')(server);
+const core     = require('lr-core');
+const road     = core('webserver')
+  .extension('router', router, true);
+```
+
+---

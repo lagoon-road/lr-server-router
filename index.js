@@ -1,4 +1,4 @@
-module.exports = (server, redirectDomain = 'http://localhost') => {
+module.exports = server => {
   let redirect;
   return update => {
     server.on('request', (request, response) => {
