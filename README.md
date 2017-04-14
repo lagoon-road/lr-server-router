@@ -1,4 +1,4 @@
-# lg-server-router reference
+# lr-server-router reference
 
 A Lagoon road extension that gives you route functionality on the server.
 
@@ -10,7 +10,7 @@ A Lagoon road extension that gives you route functionality on the server.
 | Size | 336 bytes |
 | Version | 1.0.0 |
 | License | MIT |
-| Usage | [lagoonroad.com/guide](https://www.lagoonroad.com/guide) |
+| Usage | [guide](https://lagoonroad.com/guide) |
 
 ---
 
@@ -19,7 +19,7 @@ This package doesn't have any exposed methods, it does however needs a single ar
 ```
 const protocol = require('http');
 const server   = protocol.createServer();
-const router   = require('lg-server-router')(server);
+const router   = require('lr-server-router')(server);
 const core     = require('lr-core');
 const road     = core('webserver')
   .extension('router', router, true);
