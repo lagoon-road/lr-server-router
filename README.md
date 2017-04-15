@@ -20,7 +20,7 @@ This package doesn't have any exposed methods, it does however needs a single ar
 const protocol = require('http');
 const server   = protocol.createServer();
 const router   = require('lr-server-router')(server);
-const core     = require('lr-core');
+const core     = require('lr-main');
 const road     = core('webserver')
   .extension('router', router, true);
 ```
