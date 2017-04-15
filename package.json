@@ -1,6 +1,6 @@
 {
   "name": "lr-server-router",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Server side http router core extension for lagoon-road",
   "main": "index.js",
   "scripts": {

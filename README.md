@@ -8,7 +8,7 @@ A Lagoon road extension that gives you route functionality on the server.
 | Repo link | [lr-server-router](https://github.com/lagoon-road/lr-server-router) |
 | Dependencies | - |
 | Size | 336 bytes |
-| Version | 1.0.0 |
+| Version | 1.0.1 |
 | License | MIT |
 | Usage | [guide](https://lagoonroad.com/guide) |
 
