@@ -28,8 +28,9 @@
   "homepage": "https://github.com/lagoon-road/lr-server-router#readme",
   "devDependencies": {
     "coveralls": "^2.13.0",
+    "lr-main": "^1.0.0",
     "nyc": "^10.2.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.3"
-  }  
+  }
 }
